@@ -53,7 +53,7 @@
             </ul>
         </div>
         <div class="nav-button">
-            <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+            <button class="btn">Advertisement Comparison <i class="uil uil-file-alt"></i></button>
         </div>
         <div class="nav-menu-btn">
             <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -83,7 +83,7 @@
 
                 
                 <div class="featured-text-btn2"></div>
-                <button class="btn">Download CV <i class="uil uil-file-alt"></i></button>
+                <button class="btn" id="myBtn">Advertisement Comparison <i class="uil uil-file-alt"></i></button>
             </div>
 
 
@@ -109,13 +109,15 @@
     padding: 10px;
     cursor: pointer;
   }
+
 </style>
 </head>
 <body>
 
+    ---- VIDEO BUTTON ONLY ----
 <div class="video-wrapper" id="videoWrapper">
   <video id="videoPlayer" width="70%" controls>
-    <source src="/assets/VIDEOS/On My Way_ A Journey of Confidence and Radiance.mp4" type="video/mp4">
+    <source src="/assets/VIDEOS/STARGIRL Trailer (2020) Grace VanderWaal, Disney + Romance Movie.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <button class="exit-btn" id="exitBtn">EXIT</button>
@@ -134,6 +136,84 @@
     document.getElementById('videoWrapper').style.display = 'none';
   });
 </script>
+
+
+
+
+-- IMAGE BUTTON ONLY ----
+<title>Advertisement Comparison Popup</title>
+<style>
+    /* Popup box style */
+    .popup {
+        display: none;
+        position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    }
+    /* Overlay style */
+
+    /* Close button style */
+    .close-btn {
+        position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<!-- Trigger/Open The Popup -->
+
+<!-- The Popup -->
+<div class="popup" id="myPopup">
+<!-- Popup content -->
+<img src="/assets/images/Screenshot 2024-05-31 001051.png" alt="Advertisement">
+<button class="close-btn" id="closePopup">Exit</button>
+</div>
+
+<!-- Overlay -->
+<div class="overlay" id="myOverlay"></div>
+
+<script>
+// Get the elements
+var popup = document.getElementById("myPopup");
+var btn = document.getElementById("myBtn");
+var overlay = document.getElementById("myOverlay");
+var closeBtn = document.getElementById("closePopup");
+
+// Open the popup
+btn.onclick = function() {
+popup.style.display = "flex";
+overlay.style.display = "block";
+}
+
+// Close the popup
+closeBtn.onclick = function() {
+popup.style.display = "none";
+overlay.style.display = "none";
+}
+
+// Close the popup when clicking outside of it
+window.onclick = function(event) {
+if (event.target == overlay) {
+    popup.style.display = "none";
+    overlay.style.display = "none";
+}
+}
+</script>
+
+
+
+
 
 </body>
 </html>
@@ -174,7 +254,7 @@
                        WordPress.
                     </p>
                     <div class="about-btn">
-                        <button class="btn">Download CV <i class="uil uil-import"></i></button>
+                        <button class="btn">View my Poem! <i class="uil uil-import"></i></button>
                     </div>
                 </div>
             </div>
@@ -227,18 +307,18 @@
           <div class="project-container">
             <div class="project-box">
                 <i class="uil uil-briefcase-alt"></i>
-                <h3>Completed</h3>
+                <h3>Poems</h3>
                 <label>15+ Finished Projects</label>
             </div>
             <div class="project-box">
                 <i class="uil uil-users-alt"></i>
-                <h3>Clients</h3>
+                <h3>Advertisement Comparison</h3>
                 <label>25+ Happy Clients</label>
             </div>
             <div class="project-box">
                 <i class="uil uil-award"></i>
-                <h3>Experience</h3>
-                <label>7+ Years in the field</label>
+                <h3>MOVIE TRAILER</h3>
+                <label>7+ Years in the field of Production</label>
             </div>
           </div>
        </section>
@@ -254,8 +334,8 @@
              <div class="col">
                 <div class="contact-info">
                     <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: john@doe.com</p>
-                    <p><i class="uil uil-phone"></i> Tel: +250 708 770 000</p>
+                    <p><i class="uil uil-envelope"></i> Email: qwinton.palominoterranova@mytools2go.ca</p>
+                    <p><i class="uil uil-phone"></i> St-Joseph Catholic High School</p>
                 </div>
              </div>
              <div class="col">
@@ -281,7 +361,7 @@
     <!-- --------------- FOOTER --------------- -->
     <footer>
         <div class="top-footer">
-            <p>John Doe .</p>
+            <p>Qwinton Palomino-Terranova.</p>
         </div>
         <div class="middle-footer">
             <ul class="footer-menu">
@@ -306,7 +386,7 @@
             <div class="icon"><i class="uil uil-github-alt"></i></div>
         </div>
         <div class="bottom-footer">
-            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">John Doe</a> - All rights reserved</p>
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Qwinton Palomino-Terranova</a> - All rights reserved</p>
         </div>
     </footer>
 
