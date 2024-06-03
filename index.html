@@ -53,7 +53,79 @@
             </ul>
         </div>
         <div class="nav-button">
-            <button class="btn">Advertisement Comparison <i class="uil uil-file-alt"></i></button>
+            <button class="btn" id="myBtn2">Music Playlist <i class="uil uil-file-alt"></i></button>
+            
+
+<title>Music Playlist</title>
+<style>
+    /* Popup box style */
+    .popup2 {
+        display: none;
+        position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    }
+    /* Overlay style */
+
+    /* Close button style */
+    .close-btn2 {
+        position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<!-- Trigger/Open The Popup -->
+
+<!-- The Popup -->
+<div class="popup2" id="myPopup2">
+<!-- Popup content -->
+<img src="/assets/images/MUSIC PLAYLIST (3pts).png" alt="Playlist">
+<button class="close-btn2" id="closePopup2">Exit</button>
+</div>
+
+<!-- Overlay -->
+<div class="overlay2" id="myOverlay2"></div>
+
+<script>
+// Get the elements
+var popup2 = document.getElementById("myPopup2");
+var btn2 = document.getElementById("myBtn2");
+var overlay2 = document.getElementById("myOverlay2");
+var closeBtn2 = document.getElementById("closePopup2");
+
+// Open the popup
+btn2.onclick = function() {
+popup2.style.display = "flex";
+overlay2.style.display = "block";
+}
+
+// Close the popup
+closeBtn2.onclick = function() {
+popup2.style.display = "none";
+overlay2.style.display = "none";
+}
+
+// Close the popup when clicking outside of it
+window.onclick = function(event) {
+if (event.target == overlay2) {
+    popup2.style.display = "none";
+    overlay2.style.display = "none";
+}
+}
+</script>
+
         </div>
         <div class="nav-menu-btn">
             <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -87,7 +159,6 @@
             </div>
 
 
-            ---EXTRA----
     <style>
   .video-wrapper {
     display: none;
@@ -114,10 +185,9 @@
 </head>
 <body>
 
-    ---- VIDEO BUTTON ONLY ----
 <div class="video-wrapper" id="videoWrapper">
   <video id="videoPlayer" width="70%" controls>
-    <source src="/assets/VIDEOS/STARGIRL Trailer (2020) Grace VanderWaal, Disney + Romance Movie.mp4" type="video/mp4">
+    <source src="/assets/VIDEOS/STARGIRL Trailer (2020) Movie  - QWINTON PALOMINO-TERRANOVA.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <button class="exit-btn" id="exitBtn">EXIT</button>
@@ -140,7 +210,6 @@
 
 
 
--- IMAGE BUTTON ONLY ----
 <title>Advertisement Comparison Popup</title>
 <style>
     /* Popup box style */
@@ -176,7 +245,7 @@
 <!-- The Popup -->
 <div class="popup" id="myPopup">
 <!-- Popup content -->
-<img src="/assets/images/Screenshot 2024-05-31 001051.png" alt="Advertisement">
+<img src="/assets/images/ADVERTISEMENT (4pts).png" alt="Advertisement">
 <button class="close-btn" id="closePopup">Exit</button>
 </div>
 
@@ -254,7 +323,78 @@ if (event.target == overlay) {
                        WordPress.
                     </p>
                     <div class="about-btn">
-                        <button class="btn">View my Poem! <i class="uil uil-import"></i></button>
+                        <button class="btn" id="myBtn3">View my Poem! <i class="uil uil-file-alt"></i></button>
+                       
+<style>
+    /* Popup box style */
+    .popup3 {
+        display: none;
+        position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    }
+    /* Overlay style */
+
+    /* Close button style */
+    .close-btn3 {
+        position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<!-- Trigger/Open The Popup -->
+
+<!-- The Popup -->
+<div class="popup3" id="myPopup3">
+<!-- Popup content -->
+<img src="/assets/images/POEMS (4pts).png" alt="POEMS">
+<button class="close-btn3" id="closePopup3">Exit</button>
+</div>
+
+<!-- Overlay -->
+<div class="overlay3" id="myOverlay3"></div>
+
+<script>
+// Get the elements
+var popup3 = document.getElementById("myPopup3");
+var btn3 = document.getElementById("myBtn3");
+var overlay3 = document.getElementById("myOverlay3");
+var closeBtn3 = document.getElementById("closePopup3");
+
+// Open the popup
+btn3.onclick = function() {
+popup3.style.display = "flex";
+overlay3.style.display = "block";
+}
+
+// Close the popup
+closeBtn3.onclick = function() {
+popup3.style.display = "none";
+overlay3.style.display = "none";
+}
+
+// Close the popup when clicking outside of it
+window.onclick = function(event) {
+if (event.target == overlay3) {
+    popup3.style.display = "none";
+    overlay3.style.display = "none";
+}
+}
+</script>
+
+
                     </div>
                 </div>
             </div>
@@ -308,17 +448,14 @@ if (event.target == overlay) {
             <div class="project-box">
                 <i class="uil uil-briefcase-alt"></i>
                 <h3>Poems</h3>
-                <label>15+ Finished Projects</label>
             </div>
             <div class="project-box">
                 <i class="uil uil-users-alt"></i>
                 <h3>Advertisement Comparison</h3>
-                <label>25+ Happy Clients</label>
             </div>
             <div class="project-box">
                 <i class="uil uil-award"></i>
                 <h3>MOVIE TRAILER</h3>
-                <label>7+ Years in the field of Production</label>
             </div>
           </div>
        </section>
